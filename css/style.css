@@ -1,0 +1,120 @@
+
+.nav-link {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 5%;
+}
+
+.card {
+    width: 20rem;
+}
+
+.wantedPicture .card-img-top {
+    height: 20rem;
+    position: relative;
+}
+
+.wantedPicture .card-img-top img {
+    opacity: 0.7;
+    object-fit: contain;
+    transition: 1.5s;
+}
+
+.reward {
+    position: absolute;
+    width: 60%;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2%;
+    top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    opacity: 0.8;
+    perspective: 800px;
+    transition: 1.5s;
+}
+
+.reward span {
+    color: orange;
+    font-weight: bold;
+}
+
+.dead {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2%;
+    top: 40%;
+    margin-left: 21%;
+    margin-right: 21%;
+    transition: 1.5s;
+    font-weight: bold;
+}
+
+.name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    bottom: 20%;
+    margin-left: 0;
+    transition: 1.5s;
+}
+
+/* transformations au survol du curseur sur les images des cards */
+/* changement sur l'image */
+.wantedPicture div:hover img {
+    opacity: 1;
+    transform: rotateY(360deg);
+    transition: all 2s;
+}
+
+/* changement sur la légende de l'image */
+.wantedPicture div:hover p.name {
+    font-size: 1.5rem;
+    bottom: 0;
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+
+/* changement sur reward */
+.wantedPicture div:hover p.reward {
+    transform-origin: 50% -25%;
+    transform: rotateX(90deg);
+    box-shadow: 0px 15px 2px black;
+    transition: 1s;
+}
+
+.hunter img {
+    width: 10rem;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: white;
+}
+
+#mordorArmy img {
+    width: 20rem;
+}
+
+@media screen and (max-width: 575px) {
+    h1{
+        font-size: 1.5rem;
+    }
+}
